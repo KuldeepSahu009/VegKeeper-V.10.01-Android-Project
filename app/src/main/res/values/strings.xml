@@ -1,0 +1,133 @@
+<resources>
+
+    <string name="app_name">VegKeeper</string>
+    //-------------------------------------------------------!
+
+    //+-+-+-+-+-+-+-+-+-+-+-By Default+-+-+-+-+-+-+-+-+-+-+-+
+    <string name="All_Image_and_Icons_Media_Contant_Description">All Image, Icon and Media of Vegkeeper Project</string>
+    <string name="Copyright_Content_One">Copyright ©</string>
+    <string name="Copyright_Content_Two">Team: @Rafale_Studio</string>
+    <string name="Copyright_Content_Three">2k-20</string>
+    //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+    // Main Activity
+    <string name="Main_Activity_Text_One">Vegkeeper</string>
+    <string name="Main_Activity_Text_Two">On your door...</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Login Option Activity
+    <string name="Login_Option_Activity_Text_One">Vegkeeper</string>
+    <string name="Login_Option_Activity_Text_Two">On your door...</string>
+    <string name="Login_Option_Activity_Text_Three">Let get started</string>
+    <string name="Login_Option_Activity_Text_Four">Sign in or create</string>
+    <string name="Login_Option_Activity_Text_Five">*Terms &amp; conditions</string>
+    <string name="Login_Option_Activity_Text_Six">*Privacy policy</string>
+    <string name="Login_Option_Activity_Text_Seven">Copyright ©</string>
+    <string name="Login_Option_Activity_Text_Eight">Team: @Rafale_Studio</string>
+    <string name="Login_Option_Activity_Text_Nine">2k-20</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Login Activity
+    <string name="Login_Activity_Text_One">Vegkeeper</string>
+    <string name="Login_Activity_Text_Two">On</string>
+    <string name="Login_Activity_Text_Three">Your</string>
+    <string name="Login_Activity_Text_Four">Door</string>
+    <string name="Login_Activity_Text_Five">Sign in</string>
+    <string name="Login_Activity_Text_Six">E-mail</string>
+    <string name="Login_Activity_Text_Seven">Password</string>
+    <string name="Login_Activity_Text_Eight">*Accept all T&amp;C, Policy.</string>
+    <string name="Login_Activity_Text_Nine">Verify</string>
+    <string name="Login_Activity_Text_Ten">Create an account? </string>
+    <string name="Login_Activity_Text_Eleven">Forgot password?</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Forgot Password Activity
+    <string name="Forgot_Password_Activity_Text_One">Vegkeeper</string>
+    <string name="Forgot_Password_Activity_Text_Two">On your door...</string>
+    <string name="Forgot_Password_Activity_Text_Three">Forgot you password</string>
+    <string name="Forgot_Password_Activity_Text_Four">Enter you registered e-mail address</string>
+    <string name="Forgot_Password_Activity_Text_Five">E-mail</string>
+    <string name="Forgot_Password_Activity_Text_Six">*Accept all T&amp;C, Policy.</string>
+    <string name="Forgot_Password_Activity_Text_Seven">Reset</string>
+    <string name="Forgot_Password_Activity_Text_Eight">Already have an account?</string>
+    <string name="Forgot_Password_Activity_Text_Nine">Create an account?</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Sign-Up Activity
+    <string name="SignUP_Activity_Text_One">Vegkeeper</string>
+    <string name="SignUP_Activity_Text_Two">On your door...</string>
+    <string name="SignUP_Activity_Text_Three">Sign-up</string>
+    <string name="SignUP_Activity_Text_Four">Full name</string>
+    <string name="SignUP_Activity_Text_Five">E-mail</string>
+    <string name="SignUP_Activity_Text_Six">Password</string>
+    <string name="SignUP_Activity_Text_Seven">Confirm password</string>
+    <string name="SignUP_Activity_Text_Eight">*Accept all T&amp;C, Policy.</string>
+    <string name="SignUP_Activity_Text_Nine">Create</string>
+    <string name="SignUP_Activity_Text_Ten">Already have an account?</string>
+    <string name="SignUP_Activity_Text_eleven">Sign in</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // PhoneAuth Activity
+    <string name="PhoneAuth_Activity_Text_One">Vegkeeper</string>
+    <string name="PhoneAuth_Activity_Text_Two">On your door...</string>
+    <string name="PhoneAuth_Activity_Text_Three">Copyright ©</string>
+    <string name="PhoneAuth_Activity_Text_Four">Team: @Rafale_Studio</string>
+    <string name="PhoneAuth_Activity_Text_Five">2k-20</string>
+    <string name="PhoneAuth_Fragment_One_Text_One">Verify your number</string>
+    <string name="PhoneAuth_Fragment_One_Text_Two">Enter your phone number</string>
+    <string name="PhoneAuth_Fragment_One_Text_Three">Phone number</string>
+    <string name="PhoneAuth_Fragment_One_Text_Four">*Accept all T&amp;C, Policy.</string>
+    <string name="PhoneAuth_Fragment_One_Text_Five">Submit</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // OtpAuth Activity
+    <string name="OtpAuth_Activity_Two_Text_One">Vegkeeper</string>
+    <string name="OtpAuth_Activity_Two_Text_Two">On your door...</string>
+    <string name="OtpAuth_Activity_Two_Text_Three">Enter your OTP</string>
+    <string name="OtpAuth_Activity_Two_Text_Four">O-T-P</string>
+    <string name="OtpAuth_Activity_Two_Text_Five">*Accept all T&amp;C, Policy.</string>
+    <string name="OtpAuth_Activity_Two_Text_Six">Verify</string>
+    <string name="OtpAuth_Activity_Two_Text_Seven">Resend OTP</string>
+    <string name="OtpAuth_Activity_Two_Text_Eight">Copyright ©</string>
+    <string name="OtpAuth_Activity_Two_Text_Nine">Team: @Rafale_Studio</string>
+    <string name="OtpAuth_Activity_Two_Text_Ten">2k-20</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Home Activity
+    <string name="Home_Activity_Text_One">Vegkeeper</string>
+    <string name="Home_Activity_Text_Two">On your door...</string>
+    <string name="Home_Activity_Text_Three">All Set Successfully...</string>
+    <string name="Home_Activity_Text_Four">Developed &amp; Design in:</string>
+    <string name="Home_Activity_Text_Five">.@Rafale_Studio</string>
+    <string name="Home_Activity_Text_Six">2k-20</string>
+    <string name="Home_Activity_Text_Seven">By:</string>
+    <string name="Home_Activity_Text_Eight">Kuldeep Sahu (__sky_warrior_009)</string>
+    <string name="Home_Activity_Text_Nine">http://skywarrior09.gq</string>
+    <string name="Home_Activity_Text_Ten">Log Out</string>
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+    // Activity
+    //---------------------------------------------------------------------------------------------!
+
+</resources>

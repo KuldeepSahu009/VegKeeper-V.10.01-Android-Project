@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blured_bg_03"
+    tools:context=".ForgotPassActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Main_Area_Forgot_Pass_Activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent">
+
+            <TextView
+                android:id="@+id/Headding_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/Forgot_Password_Activity_Text_One"
+                android:textColor="#1AC307"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Headding_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Forgot_Password_Activity_Text_Two"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_1"
+                app:layout_constraintTop_toBottomOf="@+id/Headding_1" />
+
+            <TextView
+                android:id="@+id/Headding_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/Forgot_Password_Activity_Text_Three"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_1"
+                app:layout_constraintStart_toStartOf="@+id/Headding_1"
+                app:layout_constraintTop_toBottomOf="@+id/Headding_2" />
+
+            <TextView
+                android:id="@+id/Headding_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Forgot_Password_Activity_Text_Four"
+                android:textColor="#1AC307"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_3"
+                app:layout_constraintStart_toStartOf="@+id/Headding_3"
+                app:layout_constraintTop_toBottomOf="@+id/Headding_3" />
+
+            <EditText
+                android:id="@+id/Email_Input_forgot"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="@string/Forgot_Password_Activity_Text_Five"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                android:textColorHint="@color/crome"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_4"
+                app:layout_constraintStart_toStartOf="@+id/Headding_4"
+                app:layout_constraintTop_toBottomOf="@+id/Headding_4"
+                android:autofillHints="" />
+
+            <CheckBox
+                android:id="@+id/Forgot_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/Forgot_Password_Activity_Text_Six"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/Email_Input_forgot"
+                app:layout_constraintTop_toBottomOf="@+id/Email_Input_forgot" />
+
+            <Button
+                android:id="@+id/Reset_Btn"
+                android:layout_width="300dp"
+                android:layout_height="40sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_btn_shape"
+                android:text="@string/Forgot_Password_Activity_Text_Seven"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:backgroundTint="#1AC307"
+                app:layout_constraintEnd_toEndOf="@+id/Email_Input_forgot"
+                app:layout_constraintStart_toStartOf="@+id/Email_Input_forgot"
+                app:layout_constraintTop_toBottomOf="@+id/Forgot_checkBox" />
+
+            <TextView
+                android:id="@+id/alredyHaveAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Forgot_Password_Activity_Text_Eight"
+                android:textColor="@color/white"
+                app:layout_constraintBaseline_toBaselineOf="@+id/createAc"
+                app:layout_constraintStart_toStartOf="@+id/Reset_Btn" />
+
+            <TextView
+                android:id="@+id/createAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/Forgot_Password_Activity_Text_Nine"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/Reset_Btn"
+                app:layout_constraintTop_toBottomOf="@+id/Reset_Btn" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

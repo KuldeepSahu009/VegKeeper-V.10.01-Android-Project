@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blured_bg_03"
+    tools:context=".LoginOptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Main_Area_Option_Activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent">
+
+            <TextView
+                android:id="@+id/Headding_One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/Login_Option_Activity_Text_One"
+                android:textColor="#1AC307"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Heading_Two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/Login_Option_Activity_Text_Two"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_One"
+                app:layout_constraintTop_toBottomOf="@+id/Headding_One" />
+
+            <TextView
+                android:id="@+id/Text_One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="@string/Login_Option_Activity_Text_Three"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/Headding_One"
+                app:layout_constraintStart_toStartOf="@+id/Headding_One"
+                app:layout_constraintTop_toBottomOf="@+id/Heading_Two" />
+
+            <Button
+                android:id="@+id/OptionButton"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/login_btn_shape"
+                android:text="@string/Login_Option_Activity_Text_Four"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1AC307"
+                app:layout_constraintEnd_toEndOf="@+id/Text_One"
+                app:layout_constraintStart_toStartOf="@+id/Text_One"
+                app:layout_constraintTop_toBottomOf="@+id/Text_One" />
+
+            <TextView
+                android:id="@+id/TermAndConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login_Option_Activity_Text_Five"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintBaseline_toBaselineOf="@+id/PrivacyPolicy"
+                app:layout_constraintStart_toStartOf="@+id/OptionButton" />
+
+            <TextView
+                android:id="@+id/PrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/Login_Option_Activity_Text_Six"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/OptionButton"
+                app:layout_constraintTop_toBottomOf="@+id/OptionButton" />
+
+            <ImageView
+                android:id="@+id/Studio_Icon"
+                android:layout_width="29dp"
+                android:layout_height="35dp"
+                android:contentDescription="@string/All_Image_and_Icons_Media_Contant_Description"
+                app:layout_constraintBottom_toTopOf="@+id/Copyright_text_One"
+                app:layout_constraintEnd_toEndOf="@+id/Copyright_text_One"
+                app:layout_constraintStart_toStartOf="@+id/Copyright_text_One"
+                app:srcCompat="@drawable/rafale_studio_icon_clean_bg" />
+
+            <TextView
+                android:id="@+id/Copyright_text_One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login_Option_Activity_Text_Seven"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/Copyright_text_Two"
+                app:layout_constraintEnd_toEndOf="@+id/Copyright_text_Two"
+                app:layout_constraintStart_toStartOf="@+id/Copyright_text_Two" />
+
+            <TextView
+                android:id="@+id/Copyright_text_Two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Login_Option_Activity_Text_Eight"
+                android:textColor="#1AC307"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Copyright_text_Three"
+                app:layout_constraintEnd_toEndOf="@+id/Copyright_text_Three"
+                app:layout_constraintStart_toStartOf="@+id/Copyright_text_Three" />
+
+            <TextView
+                android:id="@+id/Copyright_text_Three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/Login_Option_Activity_Text_Nine"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

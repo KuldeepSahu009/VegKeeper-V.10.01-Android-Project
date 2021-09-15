@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blured_bg_03"
+    tools:context=".PhoneAuthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent">
+
+            <TextView
+                android:id="@+id/Heading_I"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/PhoneAuth_Activity_Text_One"
+                android:textColor="#1AC307"
+                android:textSize="80sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Heading_II"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/PhoneAuth_Activity_Text_Two"
+                android:textColor="@color/white"
+                android:textSize="42sp"
+                app:layout_constraintEnd_toEndOf="@+id/Heading_I"
+                app:layout_constraintTop_toBottomOf="@+id/Heading_I" />
+
+            <TextView
+                android:id="@+id/Heading_III"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="center"
+                android:text="@string/PhoneAuth_Fragment_One_Text_Two"
+                android:textColor="@color/white"
+                android:textSize="65sp"
+                app:layout_constraintEnd_toEndOf="@+id/Heading_I"
+                app:layout_constraintStart_toStartOf="@+id/Heading_I"
+                app:layout_constraintTop_toBottomOf="@+id/Heading_II" />
+
+            <LinearLayout
+                android:id="@+id/PhoneAndCodeInputArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/Heading_III"
+                app:layout_constraintStart_toStartOf="@+id/Heading_III"
+                app:layout_constraintTop_toBottomOf="@+id/Heading_III">
+
+                <LinearLayout
+                    android:id="@+id/CVV_Area"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:ccpDialog_textColor="@color/black"
+                        app:ccp_arrowColor="@color/white"></com.hbb20.CountryCodePicker>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/PhoneNumInput"
+                    android:layout_width="600dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/PhoneAuth_Fragment_One_Text_Three"
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/crome"
+                    android:textSize="36sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_PhoneAuthAc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/PhoneAuth_Fragment_One_Text_Four"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/PhoneAndCodeInputArea"
+                app:layout_constraintTop_toBottomOf="@+id/PhoneAndCodeInputArea" />
+
+            <Button
+                android:id="@+id/SummitBTN"
+                android:layout_width="600dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/login_btn_shape"
+                android:text="@string/PhoneAuth_Fragment_One_Text_Five"
+                android:textAllCaps="false"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:backgroundTint="#1AC307"
+                app:layout_constraintEnd_toEndOf="@+id/PhoneAndCodeInputArea"
+                app:layout_constraintStart_toStartOf="@+id/PhoneAndCodeInputArea"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_PhoneAuthAc" />
+
+            <ImageView
+                android:id="@+id/small_Studio_White_Icon"
+                android:layout_width="58dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/All_Image_and_Icons_Media_Contant_Description"
+                app:layout_constraintBottom_toTopOf="@+id/C_1"
+                app:layout_constraintEnd_toEndOf="@+id/C_1"
+                app:layout_constraintStart_toStartOf="@+id/C_1"
+                app:srcCompat="@drawable/rafale_studio_icon_clean_bg" />
+
+            <TextView
+                android:id="@+id/C_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PhoneAuth_Activity_Text_Three"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/C_2"
+                app:layout_constraintEnd_toEndOf="@+id/C_2"
+                app:layout_constraintStart_toStartOf="@+id/C_2" />
+
+            <TextView
+                android:id="@+id/C_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/PhoneAuth_Activity_Text_Four"
+                android:textColor="#1AC307"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/C_3"
+                app:layout_constraintEnd_toEndOf="@+id/C_3"
+                app:layout_constraintStart_toStartOf="@+id/C_3" />
+
+            <TextView
+                android:id="@+id/C_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="@string/PhoneAuth_Activity_Text_Five"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
